@@ -3,13 +3,13 @@
 # Polywave
 
 <p align="center">
-  <img src="assets/logo.png" alt="Polywave" width="600" />
+  <img src="../../assets/logo.png" alt="Polywave" width="600" />
 </p>
 
 <p align="center">
   <a href="https://github.com/blackwell-systems"><img src="https://raw.githubusercontent.com/blackwell-systems/blackwell-docs-theme/main/badge-trademark.svg" alt="Blackwell Systems" /></a>
   <img src="https://img.shields.io/badge/version-0.11.0-blue" alt="Version" />
-  <a href="https://agentskills.io"><img src="assets/badge-agentskills.svg" alt="Agent Skills" /></a>
+  <a href="https://agentskills.io"><img src="../../assets/badge-agentskills.svg" alt="Agent Skills" /></a>
   <a href="https://buymeacoffee.com/blackwellsystems"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg" alt="Buy Me A Coffee" /></a>
 </p>
 
@@ -23,7 +23,7 @@ Polywave एक हल्की ओवरले परत है, कोई ए�
 
 > **Polywave में नए हैं?**
 > 1. यह README पढ़ें (15 मिनट)
-> 2. एक हल किए गए उदाहरण के लिए [QUICKSTART.md](implementations/claude-code/QUICKSTART.md) पढ़ें (20 मिनट)
+> 2. एक हल किए गए उदाहरण के लिए [QUICKSTART.md](../../implementations/claude-code/QUICKSTART.md) पढ़ें (20 मिनट)
 > 3. आज़माएँ: किसी टेस्ट प्रोजेक्ट पर `/polywave scout "feature"`
 > 4. गहराई में जाएँ: पूरी विशिष्टि के लिए [polywave-protocol](https://github.com/blackwell-systems/polywave-protocol)
 
@@ -70,7 +70,7 @@ Polywave कोई एजेंट रनटाइम नहीं है। य
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/diagrams/polywave-scout-wave-dark.svg">
-  <img src="assets/diagrams/polywave-scout-wave-light.svg" alt="Polywave scout + wave execution flow">
+  <img src="../../assets/diagrams/polywave-scout-wave-light.svg" alt="Polywave scout + wave execution flow">
 </picture>
 
 ## त्वरित शुरुआत
@@ -130,7 +130,7 @@ echo 'export PATH="$(go env GOPATH)/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 | `/polywave program plan/execute/status/replan` | बहु-फ़ीचर योजना और स्तर-गेटेड निष्पादन |
 | `/polywave amend --add-wave/--redirect-agent/--extend-scope` | सक्रिय IMPL को संशोधित करें |
 
-**पहली बार Polywave का उपयोग कर रहे हैं?** उदाहरण आउटपुट के साथ चरण-दर-चरण मार्गदर्शन के लिए [QUICKSTART.md](implementations/claude-code/QUICKSTART.md) देखें।
+**पहली बार Polywave का उपयोग कर रहे हैं?** उदाहरण आउटपुट के साथ चरण-दर-चरण मार्गदर्शन के लिए [QUICKSTART.md](../../implementations/claude-code/QUICKSTART.md) देखें।
 
 ## रिपॉज़िटरीज़
 
@@ -172,7 +172,7 @@ Polywave दो स्वतंत्र बाध्यताओं को ल�
 
 ## Polywave-Teams (प्रायोगिक)
 
-[`docs/proposals/polywave-teams/`](docs/proposals/polywave-teams/) Claude Code Agent Teams का उपयोग करने वाली एक वैकल्पिक निष्पादन परत है। वही प्रोटोकॉल, वही IMPL दस्तावेज़, वही Scout। wave की भीतरी प्लंबिंग अलग है: टीम-साथी पृष्ठभूमि के Agent टूल कॉल की जगह लेते हैं, जो एजेंटों के बीच मैसेजिंग और रीयल-टाइम विचलन चेतावनियाँ प्रदान करते हैं।
+[`docs/proposals/polywave-teams/`](../../docs/proposals/polywave-teams/) Claude Code Agent Teams का उपयोग करने वाली एक वैकल्पिक निष्पादन परत है। वही प्रोटोकॉल, वही IMPL दस्तावेज़, वही Scout। wave की भीतरी प्लंबिंग अलग है: टीम-साथी पृष्ठभूमि के Agent टूल कॉल की जगह लेते हैं, जो एजेंटों के बीच मैसेजिंग और रीयल-टाइम विचलन चेतावनियाँ प्रदान करते हैं।
 
 ## ब्लॉग पोस्ट
 
@@ -185,4 +185,4 @@ Polywave दो स्वतंत्र बाध्यताओं को ल�
 
 ## लाइसेंस
 
-[MIT OR Apache-2.0](LICENSE)
+[MIT OR Apache-2.0](../../LICENSE)

@@ -3,13 +3,13 @@
 # Polywave
 
 <p align="center">
-  <img src="assets/logo.png" alt="Polywave" width="600" />
+  <img src="../../assets/logo.png" alt="Polywave" width="600" />
 </p>
 
 <p align="center">
   <a href="https://github.com/blackwell-systems"><img src="https://raw.githubusercontent.com/blackwell-systems/blackwell-docs-theme/main/badge-trademark.svg" alt="Blackwell Systems" /></a>
   <img src="https://img.shields.io/badge/version-0.11.0-blue" alt="Version" />
-  <a href="https://agentskills.io"><img src="assets/badge-agentskills.svg" alt="Agent Skills" /></a>
+  <a href="https://agentskills.io"><img src="../../assets/badge-agentskills.svg" alt="Agent Skills" /></a>
   <a href="https://buymeacoffee.com/blackwellsystems"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg" alt="Buy Me A Coffee" /></a>
 </p>
 
@@ -23,7 +23,7 @@ Polywave 是一个轻量级的叠加层，而不是一个智能体平台。你�
 
 > **初次接触 Polywave？**
 > 1. 阅读本 README（15 分钟）
-> 2. 阅读 [QUICKSTART.md](implementations/claude-code/QUICKSTART.md)（20 分钟），了解一个完整示例
+> 2. 阅读 [QUICKSTART.md](../../implementations/claude-code/QUICKSTART.md)（20 分钟），了解一个完整示例
 > 3. 试用一下：在一个测试项目上运行 `/polywave scout "feature"`
 > 4. 深入了解：[polywave-protocol](https://github.com/blackwell-systems/polywave-protocol) 查看完整规范
 
@@ -70,7 +70,7 @@ Polywave 不是一个智能体运行时。它不路由任务、不管理智能�
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/diagrams/polywave-scout-wave-dark.svg">
-  <img src="assets/diagrams/polywave-scout-wave-light.svg" alt="Polywave scout + wave execution flow">
+  <img src="../../assets/diagrams/polywave-scout-wave-light.svg" alt="Polywave scout + wave execution flow">
 </picture>
 
 ## 快速开始
@@ -130,7 +130,7 @@ echo 'export PATH="$(go env GOPATH)/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 | `/polywave program plan/execute/status/replan` | 多特性规划与按层级门控的执行 |
 | `/polywave amend --add-wave/--redirect-agent/--extend-scope` | 修改进行中的 IMPL |
 
-**第一次使用 Polywave？** 参见 [QUICKSTART.md](implementations/claude-code/QUICKSTART.md)，其中有分步指引和示例输出。
+**第一次使用 Polywave？** 参见 [QUICKSTART.md](../../implementations/claude-code/QUICKSTART.md)，其中有分步指引和示例输出。
 
 ## 各代码仓库
 
@@ -172,7 +172,7 @@ Polywave 强制执行两条相互独立的约束，二者共同使并行执行�
 
 ## Polywave-Teams（实验性）
 
-[`docs/proposals/polywave-teams/`](docs/proposals/polywave-teams/) 是一个使用 Claude Code Agent Teams 的备选执行层。相同的协议、相同的 IMPL 文档、相同的 Scout。不同的是 wave 的底层管道：队友取代后台的 Agent 工具调用，提供智能体间的消息传递和实时的偏离告警。
+[`docs/proposals/polywave-teams/`](../../docs/proposals/polywave-teams/) 是一个使用 Claude Code Agent Teams 的备选执行层。相同的协议、相同的 IMPL 文档、相同的 Scout。不同的是 wave 的底层管道：队友取代后台的 Agent 工具调用，提供智能体间的消息传递和实时的偏离告警。
 
 ## 博客文章
 
@@ -185,4 +185,4 @@ Polywave 强制执行两条相互独立的约束，二者共同使并行执行�
 
 ## 许可证
 
-[MIT OR Apache-2.0](LICENSE)
+[MIT OR Apache-2.0](../../LICENSE)

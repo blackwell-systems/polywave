@@ -3,13 +3,13 @@
 # Polywave
 
 <p align="center">
-  <img src="assets/logo.png" alt="Polywave" width="600" />
+  <img src="../../assets/logo.png" alt="Polywave" width="600" />
 </p>
 
 <p align="center">
   <a href="https://github.com/blackwell-systems"><img src="https://raw.githubusercontent.com/blackwell-systems/blackwell-docs-theme/main/badge-trademark.svg" alt="Blackwell Systems" /></a>
   <img src="https://img.shields.io/badge/version-0.11.0-blue" alt="Version" />
-  <a href="https://agentskills.io"><img src="assets/badge-agentskills.svg" alt="Agent Skills" /></a>
+  <a href="https://agentskills.io"><img src="../../assets/badge-agentskills.svg" alt="Agent Skills" /></a>
   <a href="https://buymeacoffee.com/blackwellsystems"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg" alt="Buy Me A Coffee" /></a>
 </p>
 
@@ -23,7 +23,7 @@ Polywave طبقة خفيفة فوق ما لديك، وليست منصة وكلا
 
 > **جديد على Polywave؟**
 > 1. اقرأ هذا الملف README (15 دقيقة)
-> 2. اقرأ [QUICKSTART.md](implementations/claude-code/QUICKSTART.md) (20 دقيقة) للاطلاع على مثال محلول
+> 2. اقرأ [QUICKSTART.md](../../implementations/claude-code/QUICKSTART.md) (20 دقيقة) للاطلاع على مثال محلول
 > 3. جرّبه: `/polywave scout "feature"` على مشروع تجريبي
 > 4. تعمّق: [polywave-protocol](https://github.com/blackwell-systems/polywave-protocol) للمواصفة الكاملة
 
@@ -70,7 +70,7 @@ Polywave ليس بيئة تشغيل وكلاء. فهو لا يوجّه المه�
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/diagrams/polywave-scout-wave-dark.svg">
-  <img src="assets/diagrams/polywave-scout-wave-light.svg" alt="Polywave scout + wave execution flow">
+  <img src="../../assets/diagrams/polywave-scout-wave-light.svg" alt="Polywave scout + wave execution flow">
 </picture>
 
 ## بداية سريعة
@@ -130,7 +130,7 @@ echo 'export PATH="$(go env GOPATH)/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 | `/polywave program plan/execute/status/replan` | تخطيط متعدّد الميزات وتنفيذ مُبَوَّب حسب الطبقات |
 | `/polywave amend --add-wave/--redirect-agent/--extend-scope` | تعديل مستند IMPL النشِط |
 
-**أول مرة تستخدم Polywave؟** راجع [QUICKSTART.md](implementations/claude-code/QUICKSTART.md) للحصول على إرشاد خطوة بخطوة مع مثال للمخرجات.
+**أول مرة تستخدم Polywave؟** راجع [QUICKSTART.md](../../implementations/claude-code/QUICKSTART.md) للحصول على إرشاد خطوة بخطوة مع مثال للمخرجات.
 
 ## المستودعات
 
@@ -172,7 +172,7 @@ echo 'export PATH="$(go env GOPATH)/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 
 ## Polywave-Teams (تجريبي)
 
-[`docs/proposals/polywave-teams/`](docs/proposals/polywave-teams/) طبقة تنفيذ بديلة تستخدم Claude Code Agent Teams. البروتوكول نفسه، ومستند IMPL نفسه، و Scout نفسه. لكن سباكة الموجات مختلفة: يحلّ زملاء الفريق محلّ استدعاءات أداة Agent في الخلفية، فيوفّرون المراسلة بين الوكلاء وتنبيهات الانحراف في الوقت الفعلي.
+[`docs/proposals/polywave-teams/`](../../docs/proposals/polywave-teams/) طبقة تنفيذ بديلة تستخدم Claude Code Agent Teams. البروتوكول نفسه، ومستند IMPL نفسه، و Scout نفسه. لكن سباكة الموجات مختلفة: يحلّ زملاء الفريق محلّ استدعاءات أداة Agent في الخلفية، فيوفّرون المراسلة بين الوكلاء وتنبيهات الانحراف في الوقت الفعلي.
 
 ## تدوينة المدوّنة
 
@@ -185,4 +185,4 @@ echo 'export PATH="$(go env GOPATH)/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 
 ## الترخيص
 
-[MIT OR Apache-2.0](LICENSE)
+[MIT OR Apache-2.0](../../LICENSE)

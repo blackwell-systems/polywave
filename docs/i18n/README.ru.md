@@ -3,13 +3,13 @@
 # Polywave
 
 <p align="center">
-  <img src="assets/logo.png" alt="Polywave" width="600" />
+  <img src="../../assets/logo.png" alt="Polywave" width="600" />
 </p>
 
 <p align="center">
   <a href="https://github.com/blackwell-systems"><img src="https://raw.githubusercontent.com/blackwell-systems/blackwell-docs-theme/main/badge-trademark.svg" alt="Blackwell Systems" /></a>
   <img src="https://img.shields.io/badge/version-0.11.0-blue" alt="Version" />
-  <a href="https://agentskills.io"><img src="assets/badge-agentskills.svg" alt="Agent Skills" /></a>
+  <a href="https://agentskills.io"><img src="../../assets/badge-agentskills.svg" alt="Agent Skills" /></a>
   <a href="https://buymeacoffee.com/blackwellsystems"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg" alt="Buy Me A Coffee" /></a>
 </p>
 
@@ -23,7 +23,7 @@ Polywave — это лёгкая надстройка, а не платформ�
 
 > **Впервые знакомитесь с Polywave?**
 > 1. Прочитайте этот README (15 мин)
-> 2. Прочитайте [QUICKSTART.md](implementations/claude-code/QUICKSTART.md) (20 мин) с разобранным примером
+> 2. Прочитайте [QUICKSTART.md](../../implementations/claude-code/QUICKSTART.md) (20 мин) с разобранным примером
 > 3. Попробуйте: `/polywave scout "feature"` на тестовом проекте
 > 4. Углубитесь: [polywave-protocol](https://github.com/blackwell-systems/polywave-protocol) для полной спецификации
 
@@ -70,7 +70,7 @@ Polywave — это не агентный рантайм. Он не маршру
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/diagrams/polywave-scout-wave-dark.svg">
-  <img src="assets/diagrams/polywave-scout-wave-light.svg" alt="Polywave scout + wave execution flow">
+  <img src="../../assets/diagrams/polywave-scout-wave-light.svg" alt="Polywave scout + wave execution flow">
 </picture>
 
 ## Быстрый старт
@@ -130,7 +130,7 @@ echo 'export PATH="$(go env GOPATH)/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 | `/polywave program plan/execute/status/replan` | Планирование по нескольким фичам и выполнение с гейтами по ярусам |
 | `/polywave amend --add-wave/--redirect-agent/--extend-scope` | Изменить активный IMPL |
 
-**Впервые используете Polywave?** См. [QUICKSTART.md](implementations/claude-code/QUICKSTART.md) для пошагового руководства с примером вывода.
+**Впервые используете Polywave?** См. [QUICKSTART.md](../../implementations/claude-code/QUICKSTART.md) для пошагового руководства с примером вывода.
 
 ## Репозитории
 
@@ -172,7 +172,7 @@ Polywave обеспечивает соблюдение двух независи
 
 ## Polywave-Teams (Экспериментально)
 
-[`docs/proposals/polywave-teams/`](docs/proposals/polywave-teams/) — альтернативный слой выполнения на основе Claude Code Agent Teams. Тот же протокол, тот же IMPL-документ, тот же Scout. Другая обвязка волн: члены команды заменяют фоновые вызовы инструмента Agent, обеспечивая обмен сообщениями между агентами и оповещения об отклонениях в реальном времени.
+[`docs/proposals/polywave-teams/`](../../docs/proposals/polywave-teams/) — альтернативный слой выполнения на основе Claude Code Agent Teams. Тот же протокол, тот же IMPL-документ, тот же Scout. Другая обвязка волн: члены команды заменяют фоновые вызовы инструмента Agent, обеспечивая обмен сообщениями между агентами и оповещения об отклонениях в реальном времени.
 
 ## Блог-пост
 
@@ -185,4 +185,4 @@ Polywave обеспечивает соблюдение двух независи
 
 ## Лицензия
 
-[MIT OR Apache-2.0](LICENSE)
+[MIT OR Apache-2.0](../../LICENSE)
