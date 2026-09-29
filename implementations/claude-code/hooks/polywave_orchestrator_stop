@@ -66,25 +66,22 @@ if [[ ${#impl_slugs[@]} -eq 0 && ${#worktree_slugs[@]} -eq 0 ]]; then
   exit 0
 fi
 
-# Format lists for output
+# Format lists for output (IFS joins on its first character only, so add the space after)
 if [[ ${#impl_slugs[@]} -gt 0 ]]; then
-  impl_list="$(IFS=', '; echo "${impl_slugs[*]}")"
+  impl_list="$(IFS=','; echo "${impl_slugs[*]}" | sed 's/,/, /g')"
 else
   impl_list="none"
 fi
 
 if [[ ${#worktree_slugs[@]} -gt 0 ]]; then
-  worktree_list="$(IFS=', '; echo "${worktree_slugs[*]}")"
+  worktree_list="$(IFS=','; echo "${worktree_slugs[*]}" | sed 's/,/, /g')"
 else
   worktree_list="none"
 fi
 
-# Emit systemMessage warning
-printf '{
-  "hookSpecificOutput": {
-    "hookEventName": "Stop",
-    "systemMessage": "Polywave WARNING: Active orchestration detected. Run /polywave status or /polywave wave to resume.\n\nActive IMPL docs: %s\nActive worktrees: %s"
-  }
-}\n' "$impl_list" "$worktree_list"
+# Emit systemMessage warning. systemMessage is a top-level field (Stop has no
+# hookSpecificOutput), and jq does the escaping so newlines and quotes stay valid JSON.
+msg="$(printf 'Polywave WARNING: Active orchestration detected. Run /polywave status or /polywave wave to resume.\n\nActive IMPL docs: %s\nActive worktrees: %s' "$impl_list" "$worktree_list")"
+jq -n --arg m "$msg" '{systemMessage: $m}'
 
 exit 0

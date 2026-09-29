@@ -136,22 +136,26 @@ env_file="/tmp/polywave-agent-env-$$"
   echo "export POLYWAVE_BRANCH=\"$branch_name\""
 } > "$env_file"
 
-# Return JSON with env file path
-cat <<EOF
-{
-  "hookSpecificOutput": {
-    "hookEventName": "SubagentStart",
-    "sawAgent": true,
-    "envFile": "$env_file",
-    "variables": {
-      "POLYWAVE_AGENT_WORKTREE": "$worktree_path",
-      "POLYWAVE_AGENT_ID": "$agent_id",
-      "POLYWAVE_WAVE_NUMBER": "$wave_num",
-      "POLYWAVE_IMPL_PATH": "$impl_path",
-      "POLYWAVE_BRANCH": "$branch_name"
-    }
-  }
-}
-EOF
+# Return JSON with env file path (jq does the escaping, so paths with quotes or
+# backslashes still produce valid JSON)
+jq -n \
+  --arg env_file "$env_file" \
+  --arg worktree "$worktree_path" \
+  --arg agent_id "$agent_id" \
+  --arg wave "$wave_num" \
+  --arg impl "$impl_path" \
+  --arg branch "$branch_name" \
+  '{hookSpecificOutput: {
+      hookEventName: "SubagentStart",
+      sawAgent: true,
+      envFile: $env_file,
+      variables: {
+        POLYWAVE_AGENT_WORKTREE: $worktree,
+        POLYWAVE_AGENT_ID: $agent_id,
+        POLYWAVE_WAVE_NUMBER: $wave,
+        POLYWAVE_IMPL_PATH: $impl,
+        POLYWAVE_BRANCH: $branch
+      }
+    }}'
 
 exit 0
